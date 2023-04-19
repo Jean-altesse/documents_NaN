@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Contact List</title>
+    <link rel="stylesheet" href="essai.css">
+  </head>
+  <body>
+    <div class="container">
+      <h1>Contact List</h1>
+      <button id="add-contact-btn">Add Contact</button>
+      <div id="contact-list">
+        <table>
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Phone</th>
+              <th>Email</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+      <div id="contact-modal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <h2>Add Contact</h2>
+          <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <button id="save-contact-btn">Save</button>
+            <button id="update-contact-btn">Update</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="main.js"></script>
+
+  </body>
+</html>
